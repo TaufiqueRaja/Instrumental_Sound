@@ -1,0 +1,51 @@
+html {
+  font-size: 10px;
+  background: url('https://cdn.pixabay.com/photo/2020/06/29/19/26/piano-5353974_1280.jpg') bottom center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .3rem solid black;
+  border-radius: 10px 20px 10px 30px;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: rgb(222, 242, 243);
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color:#df81e8;
+  box-shadow: 0 0 1rem #df81e8;;
+}
+
+kbd {
+  display: block;
+  font-size: 5rem;
+}
+
+.sound {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #df81e8;;
+}
